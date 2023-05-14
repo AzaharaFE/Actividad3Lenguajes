@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIENVENIDOS A EDIX</title>
+  </head>
+  <body style="background-color:aqua;">
+        <header class="titulo">
+             <h1 style="text-align: center; margin: 10 auto; font-family:Georgia, 'Times New Roman', Times, serif; text-decoration: underline; color: blue;">INSTITUTO TECNOLOGICO EDIX </h1>
+        </header>
+        <nav class="nav">
+            <ul style="list-style-type: none; margin: 10px 0; padding: 0; text-align: center;">
+                <li style="display: inline-block; margin: 10px;"><a href="Edix.html">Inicio</a></li>
+                <li style="display: inline-block; margin: 10px;"><a href="Profesorado.html">Profesorado</a></li>
+                <li style="display: inline-block; margin: 10px;"></li><a href="Ciclos.html">Ciclos Formativos</a>
+                <li style="display: inline-block; margin: 10px;"></li><a href="Formulario.html">Formulario Consulta</a>
+            </ul>
+        </nav>
+        <section style="text-align: left;">
+        <header><h1 style="text-align: center;">FORMULARIO DE CONSULTA</h1></header>            
+            <form action="procesarPeticion.jsp" method="post">
+                <fieldset style="background-color: rgb(36, 136, 167);">
+                <legend style="border-style: ridge; background-color: white;">Datos personales:</legend>
+                    <table>
+                        <tr>
+                        <td><label for="Nombre:">Nombre: </label></td>
+                        <td><label for="Apellidos:">Apellidos: </label></td>
+                        <td><label for="email">Email</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Nombre:" style="width: 160px;"autofocus/></td>
+                        <td><input type="text" name="Apellidos:" style="width: 250px;" required/></td>
+                        <td><input type="email" name="email" placeholder="Dirección de correo electrónico" style="width: 200px;" required/></td>
+                    <table>
+                    <tr>
+                        <td><label for="Teléfono:">Teléfono Fijo: </label></td> 
+                        <td><label for="Móvil:">Teléfono Móvil: </label></td> 
+                    </tr>
+                    <tr>
+                        <td><input type="tel" name="Teléfono Fijo:" style="width: 120px;"/></td>
+                        <td><input type="tel" name="Teléfono Móvil:" style="width: 120px;"/></td>
+                    </tr>
+                    </table>
+                    <br/>
+                </fieldset>
+                <fieldset style="background-color: rgb(36, 136, 167);">
+                <legend style="border-style: ridge; background-color: white;"> Nuestra Oferta Educativa:</legend>
+                    <br/>   
+                        <label for="serviciosofertados">Grados FP:</label>
+                        <select name="serviciosofertados">
+                            <option value="-">---Seleccione uno---</option>
+                            <option value="A">ASIR</option>
+                            <option value="DAW">DAW</option>
+                            <option value="DAM">DAM</option>
+                        </select>
+                    <br />
+                </fieldset>
+                <fieldset style="background-color: rgb(36, 136, 167);">
+                <legend style="border-style: ridge; background-color: white;">Observaciones:</legend>
+                    <br/> 
+                        <label for="Motivoconsulta"> Escriba el motivo de su consulta: </label>
+                    <br/>	
+                <textarea style="resize: none;" rows="5" cols="80" name="observaciones"></textarea>
+                </fieldset>
+                <fieldset style="background-color: rgb(36, 136, 167);">
+                <legend style="border-style: ridge; background-color: white;">Comunicación:</legend>
+                    <br/> 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod enim diam, nec blandit nibh sodales et.
+                    Etiam interdum, dui in facilisis convallis, arcu diam hendrerit tortor, id imperdiet metus justo suscipit tellus.
+                    Integer aliquet ipsum dui, vitae sagittis ligula mollis dictum. 
+                    <br/>
+                    <br/>
+                        <label for="terminos">¿Acepta los terminos de uso? </label>
+                    <br/>	
+                    He leido y acepto los terminos de uso <input type="checkbox" name="terminos" value="Y" required/>
+                    <br/>	
+                    <br/>
+                        <input type="submit" value="Enviar datos" />
+                        <input type="reset" value="Limpiar formulario" />
+                </fieldset>
+            </form>
+        </section>
+  </body>
+</html>      
