@@ -4,7 +4,7 @@
     <html>
       <head>      
         <title>BIENVENIDOS A EDIX</title>
-        <link rel="stylesheet" type="text/css" href="css/elementos.css"></link>
+        <link rel="stylesheet" type="text/css" href="css/elementos.css"/>
       </head>
         <body>
           <h1><xsl:value-of select="ite/@nombre"/></h1>              
@@ -88,6 +88,7 @@
                 </div> 
                 <br/>
               <h2><a href="{ite/@web}">Visita nuestra web</a></h2>  
+              <h3><a href="https:www.grupoproeduca.com">GRUPO PROEDUCA</a></h3>
               <h3>TELEFONO:+34 91 787 39 91</h3>
         </body> 
     </html>   
