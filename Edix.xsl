@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/elementos.css"/>
       </head>
         <body>
-          <h1><xsl:value-of select="ite/@nombre"/></h1>              
+        <h1><xsl:value-of select="ite/@nombre"/></h1>              
           <br/>
             <h2>PROFESORADO</h2>
               <table border="1">
