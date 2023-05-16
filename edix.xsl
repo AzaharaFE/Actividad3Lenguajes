@@ -7,15 +7,23 @@
                 <link rel="stylesheet" type="text/css" href="edix.css" />
             </head>
             <body>
-                <h1><xsl:value-of select="ite/@nombre"/></h1>
-                <div id="enlaces">
-                <a href="{ite/@web}">Visita nuestra página web</a>
-                <br/>
-                <a href="https://github.com/AzaharaFE/Actividad3Lenguajes" target="_blank">
-                    <img style="width: 150px" src="img/github.png" title="Visita nuestro repositorio en GitHub"/>
-                </a>
-                </div>
-                <br/>              
+                <header>
+                    <h1><xsl:value-of select="ite/@nombre"/></h1>
+                </header>
+                <nav>
+                    <div id="enlaces">
+                        <div class="enlace-item">
+                            <a href="{ite/@web}">Visita nuestra página web</a>
+                        </div>
+                        <div class="enlace-item">
+                            <a href="https://github.com/AzaharaFE/Actividad3Lenguajes" target="_blank">
+                                <img style="width: 150px" src="img/github.png" title="Visita nuestro repositorio en GitHub"/>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <section>              
+                    <br/>
                     <h3>Nuestros profesores son:</h3>
                         <div id="lista">
                         <ul>
@@ -73,9 +81,14 @@
                         </tbody>
                     </table>
                     <br/>
-                    <h3>Formulario de contacto:</h3>
+                </section>
                     <div id="formulario">
                     <form action="/submit_form" method="post">
+                        <br/>
+                        <div style="border: ridge; border-color: black; background-color: lightblue; padding-bottom: 10px">
+                        <h3>Formulario de contacto:</h3>
+                        <fieldset style="background-color: lightyellow; margin-right: 20px; margin-left: 20px">
+                            <legend style="border-style: ridge; text-align: left; background-color: aquamarine">Datos personales</legend>
                         <label for="nombre">Nombre:</label><br/>
                         <input type="text" id="nombre" name="nombre" required=""/><br/>
                         <label for="email">Correo Electrónico:</label><br/>
@@ -84,10 +97,26 @@
                         <input type="tel" id="telefono" name="telefono" required=""/><br/>
                         <label for="mensaje">Mensaje:</label><br/>
                         <textarea id="mensaje" name="mensaje" rows="4" cols="50" required=""/><br/>
-                        <input type="submit" value="Enviar"/>
-                        <input type="reset" value="Limpiar formulario"/>
+                        </fieldset>
+                        <br/>
+                        <fieldset style="background-color: lightgreen; margin-right: 20px; margin-left: 20px">
+                            <legend style="border-style: ridge; text-align: left; background-color: aquamarine">Terminos de uso y enviar formulario</legend>
+                            <label for="terminos">¿Acepta los terminos de uso? </label>
+                            <br/>
+                            He leido y acepto los terminos de uso <input type="checkbox" name="terminos" value="Y" required=""/>
+                            <br/>
+                            <br/>
+                            <input style="margin: 15px" type="submit" value="Enviar datos" />
+                            <input type="reset" value="Limpiar formulario" />
+                        </fieldset>
+                        </div>
                     </form>
                     </div>
+                    <br/>
+                <footer>
+                    <p><b><xsl:value-of select="ite/empresa"/></b></p>
+                    <p><b>Teléfono de contacto: <xsl:value-of select="ite/telefono"/></b></p>
+                </footer>
             </body>
         </html>
     </xsl:template>

@@ -1,19 +1,72 @@
-h1 {
-    color: rgb(49, 50, 92);
+header {
+    background-color: burlywood;
+    border-style: ridge;
+    border-color: black;
+    margin: 0px;
+    text-decoration: ;
+}
+
+nav {
+    background-color: rgb(135, 222, 147);
+    border-bottom-style: ridge;
+    border-left: ridge;
+    border-right: ridge;
+    border-color: black;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+section {
+    background-color: lightgoldenrodyellow;
+    border-bottom-style: ridge;
+    border-left: ridge;
+    border-right: ridge;
+    border-color: black;
+    margin: 0px;
+}
+
+form {
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+footer {
+    background-color: rgb(96, 202, 197);
     text-align: center;
-    display: ;
+    border: ridge;
+    border-color: black;
+    margin: 0px;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
 
 #enlaces {
-    color: rgb(49, 50, 92);
     text-align: center;
-    display: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.enlace-item {
+    display: flex;
+    align-items: center;
+    border: ridge;
+    border-color: black;
+    width: 150px;
+    background-color: lightgreen;
+
 }
 
 h3 {
-    color: rgb(49, 50, 92);
+    color: darkslategrey;
     text-align: center;
-    display: ;
+    text-decoration: underline;
 }
 
 #lista {
@@ -24,7 +77,14 @@ h3 {
 }
 
 #formulario {
-    color: rgb(49, 50, 92);
     text-align: center;
-    display: ;
 }
+
+th {
+    background-color: darkgray;
+}
+
+td {
+    background-color: lightgray;
+}
+
