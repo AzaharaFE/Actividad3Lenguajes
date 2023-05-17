@@ -1,0 +1,70 @@
+header {
+    border: 1px solid #CCC;
+    background-color: aqua;
+    text-align: center;
+}
+nav{
+    display: flex;
+    background-color: coral ;
+    border: solid black 3px;
+    height: 50px;
+    justify-content: center;
+}
+
+.nav1{
+    width: 150px;
+    border: solid black 3px;
+    background-image: url(/img/proeduca.png);
+    background-size:contain;
+    margin-right: 100px;
+}
+
+.nav2{
+    width: 150px;
+    border: solid black 3px;
+    background-color:white;
+    text-align: center;
+    
+}
+.tel{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.owo{
+    width: 99%;
+}
+
+main{
+    display:flex;
+    justify-content: center;
+
+}
+
+.section1{
+    width: 60%;
+    height: 100%;
+    margin:10px;
+    padding: 5px;
+    border: 3px solid black;
+}
+.section2{
+    margin:10px;
+    width: 45%;
+    display: flex;
+}
+
+footer{
+    display: flex;
+    background-color: gray;
+    margin-left:10px;
+    margin-right:10px;
+    border: 3px solid black;
+    justify-content: center;
+}
+
+.divfooter{
+    width: 50%;
+    margin:10px;
+}
