@@ -1,0 +1,31 @@
+<instituto empresa="Proeduca" telefono="+34 91 787 39 91">
+    <nombre>Instituto Tecnológico Edix</nombre>
+    <web>https://institutotecnologico.edix.com</web>
+    <personal_docente>
+        <docente identificador="1" nombre="Félix"></docente>
+        <docente identificador="2" nombre="Raúl"></docente>
+        <docente identificador="3" nombre="Raquel"></docente>
+        <docente identificador="4" nombre="Tomás"></docente>
+    </personal_docente>
+    <areas>
+        <direccion ubicacion="Numero 31, 3ª Planta, Edificio A" responsable="Chon"></direccion>
+        <jefatura_estudios ubicacion="Numero 27, 2ª Planta, Edificio B" responsable="Dani"></jefatura_estudios>
+    </areas>
+    <cursos>
+        <curso tipo_grado="Superior">
+            <siglas>ASIR</siglas>
+            <denominacion>Administración de Sistemas Informáticos en Red</denominacion>
+            <titulo_decreto>2009</titulo_decreto>
+        </curso>
+        <curso tipo_grado="Superior">
+            <siglas>DAW</siglas>
+            <denominacion>Desarrollo de Aplicaciones Web</denominacion>
+            <titulo_decreto>2010</titulo_decreto>
+        </curso>
+        <curso tipo_grado="Superior">
+            <siglas>DAM</siglas>
+            <denominacion>Desarrollo de Aplicaciones Multiplataforma</denominacion>
+            <titulo_decreto>2010</titulo_decreto>
+        </curso>
+    </cursos>
+</instituto>
