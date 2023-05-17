@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<CentroEducativo>
+<profesorado codigo="1" usuario="Félix" />
+<profesorado codigo="2" usuario="Raúl" />
+<profesorado codigo="3" usuario="Raquel" />
+<profesorado codigo="4" usuario="Tomás" />
+<direccion oficina="Numero 31, 3ª Planta, Edificio A">
+<responsable>Chon</responsable>
+</direccion>
+<jefatura_estudios oficina="Numero 27, 2ª Planta, Edificio B">
+<responsable>Dani</responsable>
+</jefatura_estudios>
+<ciclosFormativos nombreCiclo="Administración de Sistemas Informáticos en Red" tipoGrado="Superior">
+<codigo>ASIR</codigo>
+<añoDecreto>2009</añoDecreto>
+</ciclosFormativos>
+<ciclosFormativos nombreCiclo="Desarrollo de Aplicaciones Web" tipoGrado="Superior">
+<codigo>DAW</codigo>
+<añoDecreto>2010</añoDecreto>
+</ciclosFormativos>
+<ciclosFormativos nombreCiclo="Desarrollo de Aplicaciones Multiplataforma" tipoGrado="Superior">
+<codigo>DAM</codigo>
+<añoDecreto>2010</añoDecreto>
+</ciclosFormativos>
+</CentroEducativo>

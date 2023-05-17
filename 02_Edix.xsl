@@ -12,7 +12,8 @@
                     </xsl:attribute>
                     <nombre><xsl:value-of select="@nombre"/></nombre>
                     <pagina><xsl:value-of select="@web"/></pagina>
-            </xsl:for-each>         
+            </xsl:for-each> 
+            <br/>        
                 <xsl:for-each select="//ite/profesores/profesor">
                     <profesorado>                      
                         <xsl:attribute name="codigo">
@@ -23,6 +24,7 @@
                         </xsl:attribute>            
                     </profesorado> 
             </xsl:for-each> 
+            </br
             <xsl:for-each select="//ite/director">       
                     <direccion>   
                         <xsl:attribute name="oficina">
