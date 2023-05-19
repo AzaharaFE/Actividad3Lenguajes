@@ -4,7 +4,7 @@
         <html>
             <head>
                 <title>Edix</title>
-                <link rel="stylesheet" type="text/css" href="XML - HTML/edix.css" />
+                <link rel="stylesheet" type="text/css" href="edix.css" />
             </head>
             <body>
                 <header>
@@ -13,7 +13,7 @@
                 <nav>
                     <div id="enlaces">
                         <div class="enlace-item">
-                            <a href="{ite/@web}">Visita nuestra página web</a>
+                            <a href="{/ite/@web}">Visita nuestra página web</a>
                         </div>
                         <div class="enlace-item">
                             <a href="https://github.com/AzaharaFE/Actividad3Lenguajes" target="_blank">
