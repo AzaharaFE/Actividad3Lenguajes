@@ -4,7 +4,7 @@
         <html>
             <head>
                 <title>Edix</title>
-                <link rel="stylesheet" type="text/css" href="edix.css" />
+                <link rel="stylesheet" type="text/css" href="XML - HTML/edix.css" />
             </head>
             <body>
                 <header>
